@@ -1,32 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Mohamed Ahmed">
+  <title>Contact - Mohamed's Blog</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Contact Me</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section>
-            <h2>Get in Touch</h2>
-            <p>Stay tuned! A contact form will be added in the next lab.</p>
-        </section>
-    </main>
+  <header id="main-header">
+    <h1>Contact Mohamed</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <footer>
-        <p>&copy; 2024 Mohamed Ahmed</p>
-    </footer>
+  <main>
+    <h2>Get in Touch</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="reason">Reason for Contact:</label>
+      <select id="reason" name="reason">
+        <option value="hi">Saying hi</option>
+        <option value="contractor">Looking for a contractor</option>
+        <option value="interview">Interested in an interview</option>
+      </select>
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Mohamed Ahmed. All Rights Reserved.</p>
+  </footer>
+
 </body>
 </html>
-
